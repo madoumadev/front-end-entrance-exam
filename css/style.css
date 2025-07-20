@@ -206,6 +206,7 @@ a {
 }
 .job-info {
     flex: 0 0 124px;
+    padding: 10px;
 }
 .job-title {
     font-size: 10px;
@@ -222,6 +223,7 @@ a {
 }
 .job-duties {
     flex: 1;
+    padding: 10px;
 }
 .tool-group {
     position: relative;
@@ -322,12 +324,16 @@ a {
     border-radius: 40px;
 }
 @media (max-width: 600px) {
+    .job-info {
+        flex: 1;
+    }
     .job-body {
         flex-direction: column;
     }
     .education-grid {
         flex-direction: column;
     }
+
 }
 
 .contact-card {
