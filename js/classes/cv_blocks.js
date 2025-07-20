@@ -200,23 +200,23 @@ class InterestsSectionBlock extends Block {
     constructor() {
         super();
         this.interests = [
-            'branding',
-            'design', 
-            'photography',
-            'artificial intelligence',
-            'illustration',
-            'typography',
-            'social networks',
-            'research',
-            'dron pilot',
-            'games'
+            "branding",
+            "design", 
+            "photography",
+            "artificial intelligence",
+            "illustration",
+            "typography",
+            "social networks",
+            "research",
+            "dron pilot",
+            "games"
         ];
     }
     
     toHTML() {
         const interestTags = this.interests.map((interest, index) => 
             `<span class="interest-tag editable" contenteditable="true" data-key="interest-${index + 1}">${interest}</span>`
-        ).join('');
+        ).join("");
         
         return `
         <section id="interests" class="card">

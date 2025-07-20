@@ -6,5 +6,6 @@
   "globalstrict": false,
   "undef": true,
   "unused": false,
+  "devel": false,
   "predef": ["html2pdf"]
 }

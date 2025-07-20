@@ -8,13 +8,13 @@ export class App{
     }
 
     init(){
-        const site = new Site('#app');
+        const site = new Site("#app");
         site.render(this.model);
 
-        const ripple = new Ripple('.editable');
+        const ripple = new Ripple(".editable");
         ripple.run();
 
-        const download = new DownloadCv('resume');
+        const download = new DownloadCv("resume");
         download.run();
     }
 }

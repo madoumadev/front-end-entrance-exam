@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "jshint js/**/*.js"
+    "lint": "jshint js/**/*.js",
+    "lint:eslint": "eslint js/**/*.js",
+    "lint:all": "npm run lint && npm run lint:eslint"
   },
   "devDependencies": {
+    "eslint": "^8.57.0",
     "jshint": "^2.13.6",
     "vite": "^5.2.0"
   },

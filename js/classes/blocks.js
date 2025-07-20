@@ -4,6 +4,6 @@ export class Block {
     }
 
     toHTML() {
-        throw new Error('Реализуйте метод toHTML');
+        throw new Error("Реализуйте метод toHTML");
     }
 }

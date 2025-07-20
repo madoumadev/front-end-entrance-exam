@@ -10,13 +10,13 @@ export class Ripple {
             const saved = localStorage.getItem(el.dataset.key);
             if (saved) el.innerText = saved;
 
-            el.addEventListener('input', () => {
+            el.addEventListener("input", () => {
                 localStorage.setItem(el.dataset.key, el.innerText);
-                el.classList.add('changed');
-                setTimeout(() => el.classList.remove('changed'), 300);
+                el.classList.add("changed");
+                setTimeout(() => el.classList.remove("changed"), 300);
             });
 
-            el.addEventListener('click', function(e) {
+            el.addEventListener("click", function(e) {
                 createRipple(e, this);
             });
         });
