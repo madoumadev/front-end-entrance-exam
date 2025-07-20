@@ -2,7 +2,7 @@ import {createRipple} from "../utils.js";
 
 export class Ripple {
     constructor(selector) {
-        this.$el = document.querySelectorAll(selector)
+        this.$el = document.querySelectorAll(selector);
     }
 
     run(){
@@ -19,7 +19,6 @@ export class Ripple {
             el.addEventListener('click', function(e) {
                 createRipple(e, this);
             });
-        })
-
+        });
     }
 }

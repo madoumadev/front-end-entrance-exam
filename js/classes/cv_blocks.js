@@ -1,7 +1,7 @@
 import {Block} from "./blocks.js";
 
 class HeroSectionBlock extends Block {
-    constructor(value) {
+    constructor() {
         super();
     }
 
@@ -45,7 +45,7 @@ class HeroSectionBlock extends Block {
 }
 
 class ExperienceSectionBlock extends Block {
-    constructor(value) {
+    constructor() {
         super();
     }
     toHTML() {
@@ -108,7 +108,7 @@ class ExperienceSectionBlock extends Block {
 }
 
 class EducationSectionBlock extends Block {
-    constructor(value) {
+    constructor() {
         super();
     }
     toHTML() {
@@ -154,7 +154,7 @@ class EducationSectionBlock extends Block {
 }
 
 class ToolsSectionBlock extends Block {
-    constructor(value) {
+    constructor() {
         super();
     }
     toHTML() {
@@ -197,7 +197,7 @@ class ToolsSectionBlock extends Block {
 }
 
 class InterestsSectionBlock extends Block {
-    constructor(value) {
+    constructor() {
         super();
         this.interests = [
             'branding',
@@ -230,7 +230,7 @@ class InterestsSectionBlock extends Block {
 }
 
 class ContactSectionBlock extends Block {
-    constructor(value) {
+    constructor() {
         super();
     }
     toHTML() {

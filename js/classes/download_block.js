@@ -1,7 +1,7 @@
 import {Block} from "./blocks.js";
 
 export class DownloadButtonBlock extends Block {
-    constructor(value) {
+    constructor() {
         super();
     }
 

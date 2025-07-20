@@ -1,0 +1,10 @@
+{
+  "esversion": 11,
+  "node": true,
+  "browser": true,
+  "strict": false,
+  "globalstrict": false,
+  "undef": true,
+  "unused": false,
+  "predef": ["html2pdf"]
+}
