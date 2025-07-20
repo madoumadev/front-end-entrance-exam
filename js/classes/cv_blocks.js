@@ -8,7 +8,7 @@ class HeroSectionBlock extends Block {
     toHTML() {
         return `
         <section id="hero" class="flex-row">
-          <img src="../../assets/me.png" alt="Profile picture of Karthik SR" class="profile-img">
+          <img src="me.png" alt="Profile picture of Karthik SR" class="profile-img">
           <div class="profile-intro card">
             <p data-key="greeting" contenteditable="true" class="greeting editable">Hello 👋🏻 I’m</p>
             <div class="identity">
@@ -119,7 +119,7 @@ class EducationSectionBlock extends Block {
             <article class="edu-card edu-card-highlight">
               <div class="edu-header">
                 <h4 class="edu-year editable" contenteditable="true" data-key="edu-1-year">2023</h4>
-                <img src="../../assets/5_129.svg" alt="Favorite icon">
+                <img src="5_129.svg" alt="Favorite icon">
               </div>
               <h3 class="edu-title editable" contenteditable="true" data-key="edu-1-title">UI/UX</h3>
               <div class="edu-tags">
@@ -165,29 +165,29 @@ class ToolsSectionBlock extends Block {
             <div class="tool-group">
               <div class="tool-tag-wrapper"><span class="tool-tag">design</span></div>
               <div class="tool-icons">
-                <img src="../../assets/5_65.png" alt="Figma logo">
-                <img src="../../assets/5_73.svg" alt="Adobe Photoshop icon part" >
-                <img src="../../assets/5_78.svg" alt="Adobe Illustrator icon part" >
-                <img src="../../assets/5_83.svg" alt="Adobe Premiere icon part" >
-                <img src="../../assets/5_86.svg" alt="Notion logo">
-                <img src="../../assets/5_88.svg" alt="Google Meet logo">
+                <img src="5_65.png" alt="Figma logo">
+                <img src="5_73.svg" alt="Adobe Photoshop icon part" >
+                <img src="5_78.svg" alt="Adobe Illustrator icon part" >
+                <img src="5_83.svg" alt="Adobe Premiere icon part" >
+                <img src="5_86.svg" alt="Notion logo">
+                <img src="5_88.svg" alt="Google Meet logo">
               </div>
             </div>
             <div class="tool-group">
               <div class="tool-tag-wrapper"><span class="tool-tag" >no-code</span></div>
               <div class="tool-icons">
-                <div><img src="../../assets/5_100.svg" alt="Zapier logo"></div>
-                <div><img src="../../assets/5_103.svg" alt="Webflow logo"></div>
-                <div><img src="../../assets/5_104.svg" alt="Framer logo"></div>
-                <div><img src="../../assets/5_108.svg" alt="Wordpress logo"></div>
+                <div><img src="5_100.svg" alt="Zapier logo"></div>
+                <div><img src="5_103.svg" alt="Webflow logo"></div>
+                <div><img src="5_104.svg" alt="Framer logo"></div>
+                <div><img src="5_108.svg" alt="Wordpress logo"></div>
               </div>
             </div>
             <div class="tool-group">
               <div class="tool-tag-wrapper"><span class="tool-tag editable" contenteditable="true" data-key="tool-group-3-tag">artoficial intelligence</span></div>
               <div class="tool-icons">
-                <img src="../../assets/chatgpt.png" alt="ChatGPT logo">
-                <img src="../../assets/copilot.png" alt="Copilot logo">
-                <img src="../../assets/Midjourney.png" alt="Midjourney logo">
+                <img src="chatgpt.png" alt="ChatGPT logo">
+                <img src="copilot.png" alt="Copilot logo">
+                <img src="Midjourney.png" alt="Midjourney logo">
               </div>
             </div>
           </div>
