@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build and Deploy Vite App to GitHub Pages
 
 on:
   push:
@@ -15,8 +15,27 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install JSHint
+        run: npm install -g jshint
+      
+      - name: Lint JavaScript files
+        run: jshint js/**/*.js
+
   build:
     runs-on: ubuntu-latest
+    needs: lint
     steps:
       - name: Checkout
         uses: actions/checkout@v4
