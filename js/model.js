@@ -1,5 +1,7 @@
-import {ExperienceBlock} from "./classes/blocks";
+import {CvBuilder} from "./classes/cv_blocks.js";
+import {DownloadButtonBlock} from "./classes/download_block.js";
 
 export const model = [
-    new ExperienceBlock(),
+    new CvBuilder(),
+    new DownloadButtonBlock()
 ]

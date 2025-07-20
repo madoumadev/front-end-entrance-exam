@@ -1,6 +1,7 @@
 export class Site {
     constructor(selector) {
         this.$el = document.querySelector(selector)
+        this.$el.className ='cv-container'
     }
 
     render(model){

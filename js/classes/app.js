@@ -1,5 +1,6 @@
 import { Site } from "./site";
 import {Ripple} from "./ripple.js";
+import {DownloadCv} from "./download_cv.js";
 
 export class App{
     constructor(model) {
@@ -9,14 +10,12 @@ export class App{
     init(){
 
         const site = new Site('#app')
-
-       /* const updateCallback = newBlock => {
-            this.model.push(newBlock)
-            site.render(this.model)
-        }*/
         site.render(this.model)
 
         const ripple = new Ripple('.editable')
         ripple.run()
+
+        const download = new DownloadCv('resume')
+        download.run()
     }
 }
