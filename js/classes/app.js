@@ -1,13 +1,13 @@
 import { Site } from "./site";
-import {Ripple} from "./ripple.js";
-import {DownloadCv} from "./download_cv.js";
+import { Ripple } from "./ripple.js";
+import { DownloadCv } from "./download_cv.js";
 
-export class App{
+export class App {
     constructor(model) {
         this.model = model;
     }
 
-    init(){
+    init() {
         const site = new Site("#app");
         site.render(this.model);
 

@@ -1,4 +1,4 @@
-import {Block} from "./blocks.js";
+import { Block } from "./blocks.js";
 
 class HeroSectionBlock extends Block {
     constructor() {
@@ -201,7 +201,7 @@ class InterestsSectionBlock extends Block {
         super();
         this.interests = [
             "branding",
-            "design", 
+            "design",
             "photography",
             "artificial intelligence",
             "illustration",
@@ -209,15 +209,18 @@ class InterestsSectionBlock extends Block {
             "social networks",
             "research",
             "dron pilot",
-            "games"
+            "games",
         ];
     }
-    
+
     toHTML() {
-        const interestTags = this.interests.map((interest, index) => 
-            `<span class="interest-tag editable" contenteditable="true" data-key="interest-${index + 1}">${interest}</span>`
-        ).join("");
-        
+        const interestTags = this.interests
+            .map(
+                (interest, index) =>
+                    `<span class="interest-tag editable" contenteditable="true" data-key="interest-${index + 1}">${interest}</span>`
+            )
+            .join("");
+
         return `
         <section id="interests" class="card">
           <h2 class="card-title editable" contenteditable="true" data-key="interests-title">Interests</h2>

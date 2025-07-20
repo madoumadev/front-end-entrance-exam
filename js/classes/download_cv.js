@@ -11,7 +11,7 @@ export class DownloadCv {
         html2pdf().from(element).save();
     }
 
-    run(){
+    run() {
         this.button.addEventListener("click", this.generatePDF.bind(this));
     }
 }

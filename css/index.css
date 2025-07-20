@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: var(--bg-main);
     color: var(--text-dark);
 }
@@ -16,7 +16,17 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-p, li, ul, pre, div, h1, h2, h3, h4, h5, h6 {
+p,
+li,
+ul,
+pre,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
 }
@@ -25,15 +35,18 @@ button {
     background-color: transparent;
 }
 
-button, select {
+button,
+select {
     text-transform: none;
 }
 
-button, [type="button"], [type="reset"], [type="submit"] {
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
     -webkit-appearance: button;
     color: inherit;
 }
-
 
 a {
     color: inherit;
@@ -45,5 +58,5 @@ img {
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }

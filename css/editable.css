@@ -1,5 +1,7 @@
 .editable {
-    transition: background 0.3s, box-shadow 0.3s;
+    transition:
+        background 0.3s,
+        box-shadow 0.3s;
     cursor: pointer;
     border-radius: 4px;
     padding: 2px 4px !important;
@@ -15,8 +17,12 @@
     animation: fadeIn 0.3s;
 }
 @keyframes fadeIn {
-    from { background: #fffde7; }
-    to { background: #e3f2fd; }
+    from {
+        background: #fffde7;
+    }
+    to {
+        background: #e3f2fd;
+    }
 }
 
 .ripple {
@@ -30,7 +36,6 @@
     transition: all 0.1s ease-out;
 }
 
-
 @keyframes ripple {
     to {
         transform: scale(4);
@@ -43,4 +48,3 @@
         display: none !important;
     }
 }
-

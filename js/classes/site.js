@@ -4,10 +4,10 @@ export class Site {
         this.$el.className = "cv-container";
     }
 
-    render(model){
+    render(model) {
         this.$el.innerHTML = "";
 
-        model.forEach(block => {
+        model.forEach((block) => {
             this.$el.insertAdjacentHTML("beforeend", block.toHTML());
         });
     }

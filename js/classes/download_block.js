@@ -1,4 +1,4 @@
-import {Block} from "./blocks.js";
+import { Block } from "./blocks.js";
 
 export class DownloadButtonBlock extends Block {
     constructor() {
@@ -6,6 +6,6 @@ export class DownloadButtonBlock extends Block {
     }
 
     toHTML() {
-        return "<button id=\"download-btn\" class=\"download-btn\">Download PDF</button>";
+        return "<button id='download-btn' class='download-btn'>Download PDF</button>";
     }
 }

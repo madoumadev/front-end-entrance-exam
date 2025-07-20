@@ -1,11 +1,11 @@
 {
-  "esversion": 11,
-  "node": true,
-  "browser": true,
-  "strict": false,
-  "globalstrict": false,
-  "undef": true,
-  "unused": false,
-  "devel": false,
-  "predef": ["html2pdf"]
+    "esversion": 11,
+    "node": true,
+    "browser": true,
+    "strict": false,
+    "globalstrict": false,
+    "undef": true,
+    "unused": false,
+    "devel": false,
+    "predef": ["html2pdf"]
 }
