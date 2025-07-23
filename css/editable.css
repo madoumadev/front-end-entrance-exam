@@ -3,14 +3,14 @@
         background 0.3s,
         box-shadow 0.3s;
     cursor: pointer;
-    border-radius: 4px;
-    padding: 2px 4px !important;
     position: relative;
 }
 .editable:focus {
-    outline: 2px solid #1976d2;
+    outline: 2px solid #0d0e0e;
     background: #e3f2fd;
     box-shadow: 0 0 0 2px #90caf9;
+    color: #000;
+    border-radius: 0;
 }
 
 .editable.changed {
@@ -77,6 +77,6 @@
 
 @media print {
     button#download {
-        display: none !important;
+        display: none;
     }
 }

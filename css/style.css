@@ -44,7 +44,7 @@ span {
 ul {
     margin: 0;
     padding-left: 16px;
-    font-size: 8px;
+    font-size: 9px;
     line-height: 1.5;
     color: var(--text-light);
 }
@@ -61,15 +61,20 @@ a {
 .card {
     background-color: var(--bg-card-grey);
     border-radius: var(--border-radius-lg);
-    padding: 12px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: var(--gap-card);
 }
 
-.education {
-    min-width: 350px;
-    width: 100%;
+.card-no-bottom-padding {
+    padding-bottom: 2px;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
 }
 
 .flex-row {
@@ -84,6 +89,9 @@ a {
     }
     .cv-container {
         padding: 0 15px;
+    }
+    .education-container {
+        max-width: 100%;
     }
 }
 
@@ -200,6 +208,7 @@ a {
     align-items: center;
     font-size: 8px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .job-tag {
@@ -331,7 +340,7 @@ a {
     color: var(--text-dark);
     font-size: 10px;
     font-weight: 400;
-    padding: 4px;
+    padding: 6px !important;
     border-radius: 40px;
 }
 @media (max-width: 600px) {
@@ -377,22 +386,10 @@ svg {
     height: 20px;
 }
 
-@media print {
-    .education-grid {
-        display: block;
-    }
-    .edu-card {
-        page-break-inside: avoid;
-        break-inside: avoid;
-    }
-    .job-tag {
-        display: inline-block;
-        min-height: 14px;
-        text-align: center;
-        vertical-align: middle;
-    }
-    .interest-tag {
-        min-height: 16px;
-        padding: 4px 10px;
+.force-print {
+    html,
+    body {
+        font-size: 12px !important;
+        line-height: 1.4 !important;
     }
 }

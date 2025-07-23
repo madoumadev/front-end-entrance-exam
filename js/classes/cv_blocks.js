@@ -113,7 +113,7 @@ class EducationSectionBlock extends Block {
     }
     toHTML() {
         return `
-        <section id="education" class="card education">
+        <section id="education" class="card">
           <h2 class="card-title editable" contenteditable="true" data-key="education-title">Education</h2>
           <div class="education-grid">
             <article class="edu-card edu-card-highlight">
@@ -159,7 +159,7 @@ class ToolsSectionBlock extends Block {
     }
     toHTML() {
         return `
-        <section id="tools" class="card">
+        <section id="tools" class="card card-no-bottom-padding">
           <h2 class="card-title editable" contenteditable="true" data-key="tools-title">Tools</h2>
           <div class="tool-groups-container">
             <div class="tool-group">
@@ -269,10 +269,8 @@ export class CvBuilder extends Block {
                     ${tools} 
                   </div>
                 </main>
-                <main id="main-content" class="flex-row">
-                  <div class="main-column">
-                    ${education}
-                  </div>
+                <main id="main-content" class="education-container">
+                  ${education}
                   <div class="sidebar-column">
                     ${interests} 
                     ${contact}
