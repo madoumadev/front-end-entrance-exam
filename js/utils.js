@@ -9,3 +9,10 @@ export function createRipple(e, el) {
     el.appendChild(ripple);
     ripple.addEventListener("animationend", () => ripple.remove());
 }
+
+export function generateRandomFilename(extension = "txt") {
+    const date = new Date();
+    const dateString = date.toISOString().slice(0, 10).replace(/-/g, "");
+    const randomString = Math.random().toString(36).substring(2, 10);
+    return `resume_${dateString}_${randomString}.${extension}`;
+}

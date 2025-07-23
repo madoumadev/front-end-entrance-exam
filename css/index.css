@@ -19,7 +19,6 @@ body {
 p,
 li,
 ul,
-pre,
 div,
 h1,
 h2,
@@ -41,9 +40,7 @@ select {
 }
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type="button"] {
     -webkit-appearance: button;
     color: inherit;
 }

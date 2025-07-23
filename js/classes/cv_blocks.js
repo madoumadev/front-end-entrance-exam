@@ -8,7 +8,7 @@ class HeroSectionBlock extends Block {
     toHTML() {
         return `
         <section id="hero" class="flex-row">
-          <img src="me.png" alt="Profile picture of Karthik SR" class="profile-img">
+          <img src="me.png" draggable="false" alt="Profile picture of Karthik SR" class="profile-img">
           <div class="profile-intro card">
             <p data-key="greeting" contenteditable="true" class="greeting editable">Hello 👋🏻 I’m</p>
             <div class="identity">
@@ -56,7 +56,7 @@ class ExperienceSectionBlock extends Block {
             <article class="job-card job-card-highlight">
               <div class="job-header">
                 <span class="job-date editable" contenteditable="true" data-key="job-1-date">Jun. 2023 - Present</span>
-                <span class="job-tag editable" contenteditable="true" data-key="job-1-tag">most recent</span>
+                <div class="job-tag">most recent</div>
               </div>
               <div class="job-body">
                 <div class="job-info">
@@ -113,7 +113,7 @@ class EducationSectionBlock extends Block {
     }
     toHTML() {
         return `
-        <section id="education" class="card">
+        <section id="education" class="card education">
           <h2 class="card-title editable" contenteditable="true" data-key="education-title">Education</h2>
           <div class="education-grid">
             <article class="edu-card edu-card-highlight">
