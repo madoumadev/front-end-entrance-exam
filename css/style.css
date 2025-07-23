@@ -61,7 +61,7 @@ a {
 .card {
     background-color: var(--bg-card-grey);
     border-radius: var(--border-radius-lg);
-    padding: 10px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
     gap: var(--gap-card);
